@@ -149,7 +149,7 @@ void free_table(Table* table) {
    }
  }
 
-PrepareResult prepare_insert(InputBuffer* input_buffer, Statement* statemnet) {
+PrepareResult prepare_insert(InputBuffer* input_buffer, Statement* statement) {
     statement->type = STATEMENT_INSERT;
 
     char* keyword = strtok(input_buffer->buffer, " ");
